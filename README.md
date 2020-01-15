@@ -17,3 +17,4 @@ rogate for respiratory-correlated 4D-MRI for motion characterization in
 radiotherapy“, Physics in Medicine & Biology 2020;65(1):01NT02, doi:10.1088/13616560/ab5c62;
 
 The "demo_noise_navigator" script shows how to use the provided code.
+The function "noiseCoVar_git" calculates the thermal noise (co)variance per profile.

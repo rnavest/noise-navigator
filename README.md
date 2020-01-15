@@ -1,5 +1,5 @@
 # noise-navigator
-These scripts can be used to calculate the noise navigator shown in these articles:
+This Matlab code can be used to calculate the noise navigator shown in these articles:
 
 R.J.M. Navest, A. Andreychenko, J.J.W. Lagendijk, and C.A.T. van den Berg, “Prospective
 Respiration Detection in Magnetic Resonance Imaging by a Non-Interfering
@@ -15,3 +15,5 @@ R.J.M. Navest, S. Mandija, T. Bruijnen, B. Stemkens, R.H.N Tijssen, A. Andrey-
 chenko, J.J.W. Lagendijk, and C.A.T. van den Berg, “The noise navigator: a sur-
 rogate for respiratory-correlated 4D-MRI for motion characterization in
 radiotherapy“, Physics in Medicine & Biology 2020;65(1):01NT02, doi:10.1088/13616560/ab5c62;
+
+The "demo_noise_navigator" script shows how to use the provided code.

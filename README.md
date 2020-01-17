@@ -24,13 +24,14 @@ The "demo_noise_navigator" script shows a respiratory motion detection example f
 1. *noiseCoVar_git* requires the raw MRI (i.e. k-space) data in the format [kx, profiles, channels], where the profiles are in chronological acquisition order. The second input needed is the FOV for the MRI data that contains anatomy (the bore has a diameter of 700 mm and thus everything outside 720 mm is considered thermal noise as there cannot be any anatomy). The output is the thermal noise (co)variance calculated per profile, corresponding time vector and the number of thermal noise samples per profile used to calculate the thermal noise (co)variance.
 ![alt text](https://github.com/rnavest/noise-navigator/blob/master/tnv_pc.png "Figure 1")
 Notice that the respiratory modulation can already be observed in the anterior channels.
-![alt text](https://github.com/rnavest/noise-navigator/blob/master/ft_tnv_pca.png "Figure 2")
+![alt text](https://github.com/rnavest/noise-navigator/blob/master/tnv_pca.png "Figure 2")
 The fifth principal component resembles the respiratory motion best.
 2. *fourierCoeff* calculates the frequency spectrum of the input data.
-![alt text](https://github.com/rnavest/noise-navigator/blob/master/ft_tnv_pca_ft.png "Figure 3")
+![alt text](https://github.com/rnavest/noise-navigator/blob/master/tnv_pca_ft.png "Figure 3")
+The respiratory frequency component is clearest in the fifth principal component.
 3. *Kalman_IEEE_legacy* applies the Kalman filter described in the IEEE article mentioned above to the thermal noise variance combined for all RF receive channels.
 4. *MovingAverage_legacy* applies a moving average filter with a certain window length to the thermal noise variance combined for all RF receive channels.
-
+![alt text](https://github.com/rnavest/noise-navigator/blob/master/noise_navigator.png "Figure 4")
 ---
 
 For questions or suggestions feel free to message me at robin.navest@gmail.com

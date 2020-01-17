@@ -38,4 +38,4 @@ The Kalman and moving average filter both reveal the respiratory imprint in the 
 
 ---
 
-For questions or suggestions feel free to message me at robin.navest@gmail.com
+For questions or suggestions feel free to send me a message at robin.navest@gmail.com

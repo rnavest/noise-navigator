@@ -31,7 +31,10 @@ The fifth principal component resembles the respiratory motion best.
 The respiratory frequency component is clearest in the fifth principal component.
 3. *Kalman_IEEE_legacy* applies the Kalman filter described in the IEEE article mentioned above to the thermal noise variance combined for all RF receive channels.
 4. *MovingAverage_legacy* applies a moving average filter with a certain window length to the thermal noise variance combined for all RF receive channels.
+The final result showing the unfiltered, Kalman-filtered and moving average filtered noise navigator is shown in the figure below.
 ![alt text](https://github.com/rnavest/noise-navigator/blob/master/noise_navigator.png "Figure 4")
+The Kalman and moving average filter both reveal the respiratory imprint in the chosen principal component.
+
 ---
 
 For questions or suggestions feel free to message me at robin.navest@gmail.com

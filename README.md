@@ -1,4 +1,4 @@
-# noise-navigator
+# noise navigator
 This Matlab code can be used to calculate the noise navigator shown in these articles:
 
 R.J.M. Navest, A. Andreychenko, J.J.W. Lagendijk, and C.A.T. van den Berg, “Prospective

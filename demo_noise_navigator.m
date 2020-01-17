@@ -49,4 +49,11 @@ type = 'same'; %'same' length or 'valid' without zero padding at the edges
 [tMA, ma] = MovingAverage_legacy(pc, t, tFilt, type);
 
 %% Show results
-figure, plot(t, pc, 'b', t, kal, 'g', tMA, ma, 'r')
+figure('Color', 'w');
+plot(t, pc .* 100, 'b', t, kal .* 100, 'g', tMA, ma .* 100, 'r',...
+    'LineWidth', 2);
+set(gca, 'Xlim', [0, t(end)], 'FontSize', 15);
+xlabel('Time [s]');
+ylabel('Modulation [%]');
+legend('raw', 'Kalman', 'moving average', 'NumColumns', 3);
+title('Noise navigator')
